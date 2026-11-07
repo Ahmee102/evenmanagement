@@ -1,0 +1,16 @@
+-- Venuvia - database_updates.sql
+-- =====================================================================
+-- Status for the supplied database (event_management): NO CHANGES NEEDED.
+--
+-- Every Venuvia module works with the 9 supplied tables exactly as
+-- exported (users, categories, events, bookings, payments, tickets,
+-- check_ins, event_images, notifications). This file intentionally
+-- contains no executable statements, so importing it changes nothing
+-- and no existing record can be harmed.
+--
+-- Optional (NOT applied, only if the project owner approves it later):
+-- a persistent "remember me" login token would require one new column.
+-- Venuvia does not depend on it; Phase 2 uses a session cookie instead.
+--
+-- ALTER TABLE `users` ADD COLUMN `remember_token` varchar(255) DEFAULT NULL;
+-- =====================================================================
